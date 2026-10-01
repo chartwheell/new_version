@@ -1,0 +1,28 @@
+/* The system: manifest and channel grid — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.section {
+  padding:150px 7vw;
+  position:relative;
+}
+
+.section-head {
+  max-width:900px;
+}
+
+.section h2 {
+  font:500 clamp(48px,7vw,105px)/.88 'Milker';
+  letter-spacing:-6px;
+  margin:18px 0;
+}
+
+.section h2 .green {
+  color:var(--green);
+}
+
+.muted {
+  color:var(--muted);
+  max-width:620px;
+  line-height:1.7;
+  font-size:16px;
+}

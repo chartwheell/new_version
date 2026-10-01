@@ -1,0 +1,36 @@
+/* Hero device — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.phone {
+  position:absolute;
+  width:210px;
+  height:420px;
+  right:22%;
+  top:13%;
+  border:2px solid #89938d;
+  border-radius:34px;
+  background:linear-gradient(150deg,#18221d,#060806 55%);
+  box-shadow:-30px 40px 100px rgba(0,0,0,.75),0 0 50px rgba(102,255,157,.12);
+  transform:rotate(10deg);
+  overflow:hidden;
+}
+
+.phone:before {
+  content:"";
+  position:absolute;
+  top:10px;
+  left:50%;
+  transform:translateX(-50%);
+  width:70px;
+  height:18px;
+  border-radius:20px;
+  background:#020302;
+}
+
+.phone-screen {
+  position:absolute;
+  inset:48px 16px 20px;
+  border-radius:22px;
+  background:radial-gradient(circle at 70% 10%,rgba(102,255,157,.2),transparent 25%),#0b100d;
+  padding:18px;
+}

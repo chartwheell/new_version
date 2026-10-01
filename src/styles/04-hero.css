@@ -1,0 +1,33 @@
+/* Hero stage — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.hero h1 {
+  font:500 clamp(62px,9vw,148px)/.84 'Milker';
+  letter-spacing:-8px;
+  margin:24px 0 32px;
+  text-transform:uppercase;
+}
+
+.hero h1 span {
+  display:block;
+  color:transparent;
+  -webkit-text-stroke:1px #f2f5f1;
+}
+
+.hero h1 em {
+  font-style:normal;
+  color:var(--green);
+}
+
+.lead {
+  font-size:17px;
+  line-height:1.7;
+  color:#9ba29e;
+  max-width:590px;
+}
+
+.actions {
+  display:flex;
+  gap:12px;
+  margin-top:34px;
+}

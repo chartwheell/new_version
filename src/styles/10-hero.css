@@ -1,0 +1,51 @@
+/* Hero stage — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.pill {
+  position:absolute;
+  background:rgba(9,14,11,.88);
+  border:1px solid rgba(102,255,157,.25);
+  padding:10px 13px;
+  border-radius:12px;
+  font-size:9px;
+  backdrop-filter:blur(10px);
+}
+
+.pill strong {
+  display:block;
+  color:var(--green);
+  font:600 16px 'Milker';
+  margin-top:3px;
+}
+
+.p1 {
+  right:0;
+  top:25%;
+}
+
+.p2 {
+  left:6%;
+  bottom:22%;
+}
+
+.p3 {
+  right:10%;
+  bottom:9%;
+}
+
+@keyframes bars {
+  to {
+    transform:scaleY(.78);
+  }
+}
+
+.scroll {
+  position:absolute;
+  bottom:30px;
+  left:7vw;
+  font-size:9px;
+  color:#777;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  writing-mode:vertical-rl;
+}

@@ -1,0 +1,18 @@
+/* Text utilities — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.mini {
+  font-size:8px;
+  color:#7e8882;
+  letter-spacing:1px;
+}
+
+.big {
+  font:600 32px 'Space Grotesk';
+  margin-top:7px;
+}
+
+.up {
+  color:var(--green);
+  font-size:10px;
+}

@@ -1,0 +1,133 @@
+/* Global supply — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.globe-section {
+  min-height:900px;
+  display:grid;
+  grid-template-columns:.75fr 1.25fr;
+  align-items:center;
+  background:linear-gradient(180deg,#07111d,#08100b 50%,#07111d);
+  overflow:hidden;
+}
+
+.globe {
+  height:700px;
+  position:relative;
+}
+
+.earth {
+  position:absolute;
+  width:650px;
+  height:650px;
+  border-radius:50%;
+  right:-100px;
+  top:30px;
+  background:radial-gradient(circle at 35% 30%,rgba(130,255,180,.18),transparent 18%),radial-gradient(circle at 50% 50%,#17251d,#030403 70%);
+  box-shadow:-30px 0 100px rgba(102,255,157,.12),inset 40px -30px 100px #000;
+  border:1px solid rgba(102,255,157,.2);
+  overflow:hidden;
+}
+
+.earth:before {
+  content:"";
+  position:absolute;
+  inset:-20%;
+  background:repeating-linear-gradient(20deg,transparent 0 26px,rgba(102,255,157,.09) 27px,transparent 29px),repeating-linear-gradient(110deg,transparent 0 38px,rgba(255,255,255,.04) 39px,transparent 41px);
+  transform:rotate(12deg);
+  opacity:.8;
+}
+
+.routes {
+  position:absolute;
+  inset:0;
+}
+
+.route {
+  position:absolute;
+  height:1px;
+  background:linear-gradient(90deg,transparent,var(--green),transparent);
+  transform-origin:left;
+  opacity:.6;
+}
+
+.r1 {
+  width:410px;
+  left:10%;
+  top:45%;
+  transform:rotate(-13deg);
+}
+
+.r2 {
+  width:320px;
+  left:22%;
+  top:57%;
+  transform:rotate(24deg);
+}
+
+.r3 {
+  width:280px;
+  left:42%;
+  top:32%;
+  transform:rotate(38deg);
+}
+
+.node {
+  position:absolute;
+  width:8px;
+  height:8px;
+  background:var(--green);
+  border-radius:50%;
+  box-shadow:0 0 20px var(--green);
+}
+
+.n1 {
+  left:30%;
+  top:42%;
+}
+
+.n2 {
+  left:63%;
+  top:58%;
+}
+
+.n3 {
+  left:56%;
+  top:25%;
+}
+
+.stat {
+  position:absolute;
+  background:rgba(7,11,8,.82);
+  border:1px solid rgba(102,255,157,.28);
+  border-radius:13px;
+  padding:15px 18px;
+  backdrop-filter:blur(12px);
+}
+
+.stat b {
+  font:600 25px 'Milker';
+  display:block;
+  color:#fff;
+}
+
+.stat small {
+  color:#727b75;
+  font-size:9px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.s1 {
+  top:14%;
+  right:5%;
+}
+
+.s2 {
+  bottom:17%;
+  left:8%;
+}
+
+.s3 {
+  top:47%;
+  left:0;
+}

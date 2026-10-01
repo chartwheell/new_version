@@ -1,0 +1,20 @@
+/* Buttons — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.btn {
+  padding:14px 20px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:.4px;
+}
+
+.primary {
+  background:var(--fg);
+  color:#080908;
+}
+
+.secondary {
+  border:1px solid #303631;
+  color:#fff;
+}

@@ -1,0 +1,45 @@
+/* Measurement dashboard — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.chart {
+  height:130px;
+  margin-top:22px;
+  display:flex;
+  align-items:end;
+  gap:5px;
+}
+
+.bar {
+  flex:1;
+  background:linear-gradient(to top,var(--green2),#b6ffd2);
+  border-radius:3px 3px 0 0;
+  animation:bars 2.5s ease-in-out infinite alternate;
+}
+
+.bar:nth-child(1) {
+  height:28%;
+}
+
+.bar:nth-child(2) {
+  height:45%;
+}
+
+.bar:nth-child(3) {
+  height:38%;
+}
+
+.bar:nth-child(4) {
+  height:64%;
+}
+
+.bar:nth-child(5) {
+  height:52%;
+}
+
+.bar:nth-child(6) {
+  height:77%;
+}
+
+.bar:nth-child(7) {
+  height:90%;
+}

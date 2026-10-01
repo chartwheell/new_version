@@ -1,0 +1,289 @@
+/* V8 density pass.
+   Kept as one ordered layer so the original cascade is preserved. */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.hero-art-v7 .realistic-phone {
+  width:228px!important;
+  height:466px!important;
+  border-radius:40px!important;
+  border:3px solid #aebdca!important;
+  background:linear-gradient(145deg,#fdfefe 0%,#e8f1f8 55%,#c9d8e4 100%)!important;
+  box-shadow:-22px 35px 65px rgba(22,58,88,.22),inset 2px 2px 0 rgba(255,255,255,.95),0 0 0 1px rgba(12,53,84,.08)!important;
+  transform:rotate(6deg)!important;
+  overflow:visible!important;
+}
+
+.realistic-phone:after {
+  content:"";
+  position:absolute;
+  inset:7px;
+  border-radius:34px;
+  border:1px solid rgba(255,255,255,.9);
+  pointer-events:none;
+  z-index:5;
+}
+
+.realistic-phone .phone-screen-v7 {
+  inset:10px!important;
+  border-radius:32px!important;
+  background:linear-gradient(180deg,#f9fcff 0%,#edf6fd 100%)!important;
+  padding:18px 16px!important;
+  color:#0a2942!important;
+  overflow:hidden;
+}
+
+.realistic-phone .phone-notch {
+  top:14px!important;
+  width:92px!important;
+  height:25px!important;
+  border-radius:18px!important;
+  background:#071421!important;
+  z-index:8!important;
+}
+
+.phone-side-button {
+  position:absolute;
+  right:-5px;
+  width:4px;
+  border-radius:4px;
+  background:#9aabb9;
+  z-index:7;
+}
+
+.phone-volume-1 {
+  left:-5px;
+  right:auto;
+  top:112px;
+  height:38px;
+}
+
+.phone-volume-2 {
+  left:-5px;
+  right:auto;
+  top:158px;
+  height:38px;
+}
+
+.phone-power {
+  top:145px;
+  height:62px;
+}
+
+.phone-status {
+  display:flex;
+  justify-content:space-between;
+  font:700 9px/1 'Milker',Arial,sans-serif;
+  color:#0b2b44;
+  padding:2px 3px 8px;
+  letter-spacing:.1px;
+}
+
+.phone-appbar {
+  display:flex;
+  align-items:center;
+  gap:7px;
+  font:700 10px/1 'Milker',Arial,sans-serif;
+  color:#12344c;
+}
+
+.phone-appbar i {
+  margin-left:auto;
+  font-style:normal;
+  font-size:7px;
+  color:#0079ec;
+  background:#dff0ff;
+  padding:5px 7px;
+  border-radius:99px;
+}
+
+.cw-mini-logo {
+  width:20px;
+  height:20px;
+  border-radius:7px;
+  background:#087ff0;
+  color:white;
+  display:grid;
+  place-items:center;
+  font-size:11px;
+}
+
+.phone-greeting {
+  margin-top:24px;
+}
+
+.phone-greeting small {
+  display:block;
+  font:700 7px/1 'Milker',Arial,sans-serif;
+  letter-spacing:1px;
+  color:#7690a4;
+}
+
+.phone-greeting strong {
+  display:block;
+  font:700 38px/.9 'Milker',Arial,sans-serif;
+  letter-spacing:-1.5px;
+  color:#092b47;
+  margin-top:7px;
+}
+
+.phone-greeting span {
+  display:block;
+  font:600 9px/1 'Milker',Arial,sans-serif;
+  color:#7890a1;
+  margin-top:6px;
+}
+
+.phone-insight {
+  margin-top:17px;
+  padding:10px;
+  border:1px solid #d4e5f1;
+  border-radius:13px;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  gap:9px;
+}
+
+.insight-icon {
+  width:28px;
+  height:28px;
+  border-radius:9px;
+  background:#e5f2ff;
+  color:#087ff0;
+  display:grid;
+  place-items:center;
+  font:700 16px 'Milker';
+}
+
+.phone-insight b,
+.phone-insight span {
+  display:block;
+  font-family:'Milker',Arial,sans-serif;
+}
+
+.phone-insight b {
+  font-size:8px;
+  color:#14344c;
+}
+
+.phone-insight span {
+  font-size:7px;
+  color:#6e879b;
+  margin-top:3px;
+}
+
+.phone-flow {
+  margin-top:16px;
+}
+
+.flow-row {
+  margin:10px 0;
+}
+
+.flow-row span {
+  font:700 7px/1 'Milker',Arial,sans-serif;
+  letter-spacing:.6px;
+  color:#71899c;
+}
+
+.flow-row b {
+  float:right;
+  font:700 8px/1 'Milker',Arial,sans-serif;
+  color:#173a54;
+}
+
+.flow-row i {
+  display:block;
+  height:5px;
+  background:#dceaf4;
+  border-radius:99px;
+  margin-top:6px;
+  overflow:hidden;
+}
+
+.flow-row em {
+  display:block;
+  height:100%;
+  background:linear-gradient(90deg,#087ff0,#57b5ff);
+  border-radius:99px;
+}
+
+.phone-channels {
+  display:flex;
+  gap:5px;
+  margin-top:15px;
+  flex-wrap:wrap;
+}
+
+.phone-channels span {
+  font:700 6px/1 'Milker',Arial,sans-serif;
+  color:#46718e;
+  background:#e7f3fc;
+  border:1px solid #d3e7f5;
+  border-radius:99px;
+  padding:6px 7px;
+}
+
+.phone-bottom {
+  position:absolute;
+  left:16px;
+  right:16px;
+  bottom:16px;
+  border-top:1px solid #d8e6ef;
+  padding-top:10px;
+  display:flex;
+  justify-content:space-between;
+  font:600 6px/1 'Milker',Arial,sans-serif;
+  color:#71899c;
+}
+
+.phone-bottom b {
+  font-size:8px;
+  color:#0a3150;
+}
+
+.hero-float,
+.hero-activity {
+  font-family:'Milker',Arial,sans-serif!important;
+}
+
+.hero-float *,
+.hero-activity * {
+  font-family:'Milker',Arial,sans-serif!important;
+}
+
+.hero-float {
+  background:rgba(255,255,255,.96)!important;
+  color:#17344d!important;
+  border-color:#cfe1ee!important;
+  box-shadow:0 16px 35px rgba(15,61,96,.12)!important;
+}
+
+.hero-float small,
+.hero-float span {
+  color:#71889a!important;
+}
+
+.hero-float strong {
+  color:#087ff0!important;
+}
+
+.hero-activity {
+  background:#fff!important;
+  color:#17344d!important;
+  border-color:#cfe1ee!important;
+  box-shadow:0 16px 35px rgba(15,61,96,.12)!important;
+}
+
+.hero-metric {
+  font-family:'Milker',Arial,sans-serif!important;
+}
+
+@media(max-width:900px) {
+  .hero-art-v7 .realistic-phone {
+    transform:rotate(4deg) scale(.92)!important;
+  }
+  .hero-float {
+    transform:scale(.9);
+  }
+}

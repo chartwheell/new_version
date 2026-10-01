@@ -1,0 +1,48 @@
+/* Navigation, progress bar, section dots — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+nav {
+  height:76px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index:50;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 4vw;
+  border-bottom:1px solid rgba(255,255,255,.06);
+  background:rgba(5,7,6,.62);
+  backdrop-filter:blur(20px);
+}
+
+.logo {
+  font:700 20px 'Milker';
+  letter-spacing:-.7px;
+}
+
+.logo i {
+  color:var(--green);
+  font-style:normal;
+}
+
+.navlinks {
+  display:flex;
+  gap:28px;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+  color:#aeb5b0;
+}
+
+.navlinks a:hover {
+  color:#fff;
+}
+
+.navcta {
+  border:1px solid var(--green);
+  padding:10px 17px;
+  border-radius:999px;
+  color:var(--green)!important;
+}

@@ -1,0 +1,38 @@
+/* Hero stage — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.hero-art {
+  position:absolute;
+  right:3vw;
+  top:16%;
+  width:43vw;
+  height:65vh;
+  min-width:430px;
+  max-width:700px;
+}
+
+.orb {
+  position:absolute;
+  right:4%;
+  top:8%;
+  width:68%;
+  aspect-ratio:1;
+  border-radius:50%;
+  border:1px solid rgba(102,255,157,.22);
+  box-shadow:0 0 120px rgba(34,255,130,.08),inset 0 0 90px rgba(34,255,130,.05);
+}
+
+.orb:before,
+.orb:after {
+  content:"";
+  position:absolute;
+  border:1px solid rgba(102,255,157,.18);
+  border-radius:50%;
+  inset:11%;
+  transform:rotate(35deg) scaleX(1.45);
+}
+
+.orb:after {
+  inset:25%;
+  transform:rotate(-50deg) scaleX(1.55);
+}

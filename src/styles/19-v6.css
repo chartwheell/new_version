@@ -1,0 +1,400 @@
+/* V6 bold-type and imagery pass.
+   Kept as one ordered layer so the original cascade is preserved. */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+:root {
+  --cw-blue:#0082fe;
+  --cw-blue-dark:#0b1d30;
+  --cw-ice:#eef6fd;
+  --cw-line:#d7e6f2;
+  --cw-text:#0b1d30;
+  --cw-muted:#607286;
+}
+
+body {
+  font-family:'Milker','Arial Black','Helvetica Neue',Arial,sans-serif;
+  font-weight:700;
+  color:var(--cw-text);
+  background:#f7fbff;
+}
+
+body * {
+  font-family:inherit;
+}
+
+.hero h1,
+.section h2,
+.category-hero-copy h3,
+.cat-card h4,
+.story-content h3,
+.logo,
+.btn,
+.hero-metric b,
+.dash-number,
+.layer span,
+.core,
+.stat b,
+.lab-core {
+  font-family:'Milker','Arial Black','Helvetica Neue',Arial,sans-serif;
+  font-weight:800;
+}
+
+.lead,
+.muted,
+.category-intro p,
+.category-hero-copy p,
+.cat-card p,
+.story-content p,
+.lab-copy,
+.navlinks,
+.dash-title,
+.side-stat span,
+footer span {
+  font-family:'Milker','Helvetica Neue',Arial,sans-serif;
+  font-weight:500;
+}
+
+.nav {
+  background:rgba(255,255,255,.88)!important;
+  border-bottom:1px solid #dce8f2!important;
+  box-shadow:0 12px 40px rgba(23,70,110,.08)!important;
+}
+
+.navlinks {
+  color:#506277!important;
+}
+
+.navlinks a:hover {
+  color:var(--cw-blue)!important;
+}
+
+.navcta {
+  background:var(--cw-blue)!important;
+  border-color:var(--cw-blue)!important;
+  color:#fff!important;
+}
+
+.hero {
+  background:radial-gradient(circle at 77% 44%,rgba(0,130,254,.13),transparent 30%),linear-gradient(135deg,#fff 0%,#f5faff 58%,#edf6fd 100%);
+  color:var(--cw-text);
+}
+
+.hero h1 {
+  color:var(--cw-text);
+}
+
+.hero h1 span {
+  -webkit-text-stroke:1.2px var(--cw-text);
+  color:transparent;
+}
+
+.hero h1 em,
+.eyebrow,
+.kicker,
+.section h2 .green {
+  color:var(--cw-blue)!important;
+}
+
+.lead {
+  color:#5c6d80;
+}
+
+.secondary {
+  border-color:#b9ccdc!important;
+  color:var(--cw-text)!important;
+  background:#fff;
+}
+
+.hero-art {
+  filter:drop-shadow(0 35px 70px rgba(0,80,150,.13));
+}
+
+.hero-art:before {
+  content:"";
+  position:absolute;
+  right:3%;
+  top:4%;
+  width:62%;
+  height:74%;
+  border-radius:50%;
+  background:url('https://neuradigi.com/images/services/mobile-apps.jpg') center/cover no-repeat;
+  opacity:.22;
+  mix-blend-mode:multiply;
+  filter:saturate(1.15) contrast(1.08);
+  mask-image:radial-gradient(circle,#000 0 48%,transparent 75%);
+}
+
+.phone {
+  border-color:#b8c8d7!important;
+  background:linear-gradient(145deg,#ffffff,#eaf5ff 60%,#dbeeff)!important;
+  box-shadow:-25px 35px 90px rgba(21,69,110,.22),0 0 55px rgba(0,130,254,.14)!important;
+}
+
+.phone-screen {
+  background:linear-gradient(160deg,#0b2a46,#071a2b 60%,#08233c)!important;
+}
+
+.bar {
+  background:linear-gradient(to top,#0082fe,#8fd8ff)!important;
+}
+
+.pill {
+  background:rgba(255,255,255,.94)!important;
+  border-color:#bcdcf5!important;
+  color:#17324b!important;
+}
+
+.pill strong {
+  color:var(--cw-blue)!important;
+}
+
+.section {
+  background:#f7fbff;
+  color:var(--cw-text);
+}
+
+.muted {
+  color:var(--cw-muted);
+}
+
+.ecosystem {
+  background:linear-gradient(180deg,#f1f7fc,#eaf3fa)!important;
+  color:var(--cw-text)!important;
+}
+
+.layer {
+  background:linear-gradient(135deg,rgba(255,255,255,.92),rgba(231,242,251,.82))!important;
+  border-color:#cbddea!important;
+  box-shadow:0 25px 70px rgba(26,75,112,.11)!important;
+  color:var(--cw-text);
+}
+
+.layer span {
+  color:var(--cw-text);
+}
+
+.core {
+  background:var(--cw-blue)!important;
+  color:#fff!important;
+  box-shadow:0 0 70px rgba(0,130,254,.32)!important;
+}
+
+.channel-grid {
+  gap:16px;
+}
+
+.channel {
+  background:#fff!important;
+  border:1px solid #d7e5ef!important;
+  box-shadow:0 16px 45px rgba(22,71,112,.07);
+}
+
+.channel:hover {
+  border-color:#8ec8f4!important;
+  box-shadow:0 28px 70px rgba(22,71,112,.13);
+}
+
+.channel-art {
+  background:linear-gradient(145deg,#edf7ff,#dcefff)!important;
+}
+
+.channel-copy b {
+  color:var(--cw-text);
+}
+
+.channel-copy p {
+  color:#657589;
+}
+
+.signal-lab {
+  background:linear-gradient(135deg,#071a2a,#0b2c49)!important;
+}
+
+.signal-lab:before {
+  opacity:.6;
+}
+
+.lab-head h2 {
+  font-family:'Milker','Arial Black',sans-serif;
+  font-weight:800;
+}
+
+.lab-head h2 em {
+  color:#65c8ff;
+}
+
+.signal-map {
+  background:radial-gradient(circle at 50% 50%,rgba(0,130,254,.16),transparent 28%),#061522!important;
+  border-color:#214864!important;
+}
+
+.lab-card {
+  background:rgba(255,255,255,.96)!important;
+  border-color:#9bc8ea!important;
+  color:var(--cw-text);
+  box-shadow:0 20px 55px rgba(0,0,0,.2);
+}
+
+.lab-card small {
+  color:#718296;
+}
+
+.lab-card strong {
+  color:var(--cw-text);
+}
+
+.lab-card i {
+  color:var(--cw-blue);
+}
+
+.lab-core {
+  background:radial-gradient(circle,#fff 0 5%,#0082fe 6% 22%,rgba(0,130,254,.18) 23% 56%,transparent 57%)!important;
+  color:#fff;
+  box-shadow:0 0 90px rgba(0,130,254,.35);
+}
+
+.story-card {
+  background:#fff!important;
+  border-color:#d7e5ef!important;
+  box-shadow:0 18px 55px rgba(21,71,111,.08);
+}
+
+.story-content h3 {
+  color:var(--cw-text);
+}
+
+.story-content p {
+  color:#647589;
+}
+
+.mini-phone {
+  background:linear-gradient(145deg,#dcefff,#fff)!important;
+  border-color:#a7c9e3!important;
+  box-shadow:0 30px 70px rgba(17,70,113,.2);
+}
+
+.mini-phone .screen {
+  background:linear-gradient(180deg,#0a2c48,#071b2e)!important;
+}
+
+.performance {
+  background:#fff!important;
+  color:var(--cw-text)!important;
+}
+
+.dashboard {
+  background:#f5faff!important;
+  border-color:#d0e0ec!important;
+  box-shadow:0 30px 90px rgba(19,70,110,.1)!important;
+}
+
+.dash-main,
+.dash-side {
+  background:#fff!important;
+  border-color:#d8e6f0!important;
+}
+
+.dash-number {
+  color:var(--cw-text)!important;
+}
+
+.side-stat b {
+  color:var(--cw-blue)!important;
+}
+
+.category-section {
+  background:linear-gradient(180deg,#eef6fc,#f8fbff)!important;
+}
+
+.category-hero {
+  background:#071b2d!important;
+}
+
+.category-hero:after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(3,18,32,.15),rgba(3,18,32,.03) 50%,rgba(3,18,32,.3));
+  z-index:1;
+}
+
+.category-hero-art:after {
+  content:"";
+  position:absolute;
+  inset:8% 4% 8% 32%;
+  background:url('https://dbiz.ai/_next/image?q=75&url=https%3A%2F%2Fdbiz.ai%2Fdrupal%2Fsites%2Fdefault%2Ffiles%2F2025-03%2FTransformation%2520%25281%2529.png&w=3840') center/cover no-repeat;
+  opacity:.55;
+  mix-blend-mode:screen;
+  mask-image:linear-gradient(90deg,transparent 0,#000 20%,#000 100%);
+}
+
+.category-hero-copy {
+  z-index:5;
+}
+
+.cat-card {
+  background:#fff!important;
+}
+
+.cat-card:hover {
+  background:#f7fbff!important;
+}
+
+.cat-card:nth-child(1) {
+  background:linear-gradient(135deg,#fff,#eef7ff)!important;
+}
+
+.cat-card:nth-child(2) {
+  background:linear-gradient(135deg,#fff,#f3f9ff)!important;
+}
+
+.cat-card:nth-child(3) {
+  background:linear-gradient(135deg,#fff,#edf7ff)!important;
+}
+
+.cat-card:nth-child(4) {
+  background:linear-gradient(135deg,#fff,#f5faff)!important;
+}
+
+.cat-card:nth-child(5) {
+  background:linear-gradient(135deg,#fff,#eef6fc)!important;
+}
+
+.cat-card:nth-child(6) {
+  background:linear-gradient(135deg,#fff,#f2f8fd)!important;
+}
+
+.cta {
+  background:radial-gradient(circle at 70% 40%,rgba(0,130,254,.28),transparent 28%),linear-gradient(135deg,#061625,#0a3965)!important;
+}
+
+.cta h2 {
+  font-family:'Milker','Arial Black',sans-serif;
+  font-weight:800;
+}
+
+.cta h2 span {
+  color:#63c8ff!important;
+}
+
+footer {
+  background:#071827!important;
+  color:#fff!important;
+}
+
+footer span {
+  color:#8ca1b3!important;
+}
+
+@media(max-width:900px) {
+  .hero-art:before {
+    opacity:.13;
+  }
+  .category-hero-art:after {
+    inset:5% 0 18% 8%;
+    opacity:.4;
+  }
+  .hero h1 {
+    letter-spacing:-4px;
+  }
+}

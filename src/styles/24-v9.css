@@ -1,0 +1,87 @@
+/* V9 phone-UI pass.
+   Kept as one ordered layer so the original cascade is preserved. */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.realistic-phone,
+.realistic-phone * {
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:geometricPrecision;
+}
+
+.realistic-phone {
+  transform:rotate(6deg) translateZ(0)!important;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+
+.realistic-phone .phone-screen-v7 {
+  transform:translateZ(0);
+  -webkit-font-smoothing:antialiased;
+}
+
+.phone-channels {
+  position:relative!important;
+  z-index:2!important;
+  display:flex!important;
+  flex-wrap:nowrap!important;
+  gap:5px!important;
+  margin-top:15px!important;
+  padding-right:0!important;
+}
+
+.phone-channels span {
+  white-space:nowrap!important;
+  flex:0 0 auto!important;
+  padding:6px 7px!important;
+  font-size:6px!important;
+  line-height:1!important;
+  letter-spacing:.05px!important;
+}
+
+.phone-bottom {
+  left:15px!important;
+  right:15px!important;
+  bottom:13px!important;
+  min-height:27px!important;
+  padding-top:8px!important;
+  display:grid!important;
+  grid-template-columns:1fr 1fr!important;
+  column-gap:12px!important;
+  align-items:end!important;
+  font-size:6.5px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+
+.phone-bottom span {
+  min-width:0!important;
+  display:flex!important;
+  align-items:baseline!important;
+  gap:3px!important;
+}
+
+.phone-bottom span:last-child {
+  justify-content:flex-end!important;
+}
+
+.phone-bottom b {
+  font-size:8.5px!important;
+  line-height:1!important;
+  flex:0 0 auto!important;
+}
+
+@media(max-width:560px) {
+  .phone-channels {
+    gap:3px!important;
+  }
+  .phone-channels span {
+    font-size:5.5px!important;
+    padding:5px 6px!important;
+  }
+  .phone-bottom {
+    left:12px!important;
+    right:12px!important;
+    column-gap:7px!important;
+  }
+}

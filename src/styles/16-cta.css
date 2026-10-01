@@ -1,0 +1,139 @@
+/* Closing CTA and footer — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.cta {
+  min-height:80vh;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+  background:radial-gradient(circle,rgba(102,255,157,.12),transparent 28%),#07111d;
+}
+
+.cta-orb {
+  position:absolute;
+  width:550px;
+  height:550px;
+  border-radius:50%;
+  border:1px solid rgba(102,255,157,.22);
+  box-shadow:0 0 100px rgba(102,255,157,.08),inset 0 0 100px rgba(102,255,157,.06);
+}
+
+.cta h2 {
+  position:relative;
+  font:500 clamp(56px,9vw,140px)/.84 'Space Grotesk';
+  letter-spacing:-8px;
+  text-transform:uppercase;
+  margin:15px 0 40px;
+}
+
+.cta h2 span {
+  color:var(--green);
+}
+
+footer {
+  padding:35px 7vw;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  color:#69716c;
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+footer b {
+  color:#fff;
+  font:700 17px 'Space Grotesk';
+}
+
+@media(max-width:900px) {
+  .navlinks {
+    display:none;
+  }
+  .hero {
+    padding:120px 6vw 80px;
+  }
+  .hero-copy {
+    width:100%;
+  }
+  .hero-art {
+    position:relative;
+    right:auto;
+    top:auto;
+    width:100%;
+    height:420px;
+    min-width:0;
+    margin-top:20px;
+    opacity:.75;
+  }
+  .hero {
+    display:block;
+  }
+  .hero h1 {
+    font-size:17vw;
+    letter-spacing:-5px;
+  }
+  .manifest,
+  .globe-section {
+    grid-template-columns:1fr;
+  }
+  .globe {
+    height:500px;
+  }
+  .earth {
+    width:500px;
+    height:500px;
+    right:-180px;
+  }
+  .channel-grid {
+    grid-template-columns:1fr 1fr;
+  }
+  .industry-row {
+    grid-template-columns:1fr 1fr;
+  }
+  .dashboard {
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:560px) {
+  .section {
+    padding:100px 6vw;
+  }
+  .channel-grid,
+  .industry-row {
+    grid-template-columns:1fr;
+  }
+  .phone {
+    width:160px;
+    height:320px;
+  }
+  .hero-art {
+    height:350px;
+  }
+  .stack {
+    height:400px;
+  }
+  .layer {
+    width:90%;
+    left:5%;
+  }
+  .l2 {
+    left:8%;
+  }
+  .l3 {
+    left:3%;
+  }
+  .l4 {
+    left:10%;
+  }
+  footer {
+    display:block;
+  }
+  footer span {
+    display:block;
+    margin-top:15px;
+  }
+}

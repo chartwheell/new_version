@@ -1,0 +1,37 @@
+/* Hero stage — original component pass */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.hero {
+  min-height:100vh;
+  position:relative;
+  display:flex;
+  align-items:center;
+  padding:120px 7vw 70px;
+  overflow:hidden;
+  background:radial-gradient(circle at 72% 45%,rgba(29,255,122,.10),transparent 30%),radial-gradient(circle at 10% 80%,rgba(29,255,122,.06),transparent 28%);
+}
+
+.grid {
+  position:absolute;
+  inset:0;
+  opacity:.18;
+  background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);
+  background-size:80px 80px;
+  mask-image:linear-gradient(to bottom,black,transparent 90%);
+}
+
+.hero-copy {
+  position:relative;
+  z-index:4;
+  width:58%;
+  max-width:850px;
+}
+
+.eyebrow,
+.kicker {
+  font-size:10px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--green);
+  font-weight:600;
+}

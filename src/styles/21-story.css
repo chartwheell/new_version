@@ -1,0 +1,29 @@
+/* story-photo block.
+   Kept as one ordered layer so the original cascade is preserved. */
+/* Ported from chartwheel_awwwards_v11_pixar_phone.html */
+
+.story-photo {
+  position:absolute;
+  right:-5%;
+  top:5%;
+  width:58%;
+  height:72%;
+  object-fit:cover;
+  border-radius:28px;
+  opacity:.24;
+  mix-blend-mode:multiply;
+  filter:saturate(1.15) contrast(1.05);
+  mask-image:linear-gradient(90deg,transparent,#000 28%,#000);
+}
+
+.story-card.large:after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,#fff 0%,rgba(255,255,255,.9) 38%,rgba(255,255,255,.1) 75%);
+  z-index:1;
+}
+
+.story-card.large .story-content {
+  z-index:4;
+}
