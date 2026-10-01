@@ -1,6 +1,14 @@
 // Copy and configuration transcribed from chartwheel_awwwards_v11_pixar_phone.html.
 
-export const LOGO = '/img/chartwheel-logo.png'
+/**
+ * Resolves a file in /public against the deploy base. Vite rewrites asset URLs
+ * in CSS and index.html, but not plain strings in JS, so public assets have to
+ * be prefixed by hand or they 404 under a GitHub Pages project sub-path.
+ */
+export const asset = (path) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
+
+export const LOGO = asset('img/chartwheel-logo.png')
 
 export const CONTACT = {
   email: 'hello@chartwheel.com',

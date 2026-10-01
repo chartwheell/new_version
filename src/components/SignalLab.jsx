@@ -1,8 +1,8 @@
-import { labCards } from '../data/site'
+import { asset, labCards } from '../data/site'
 import { SignalMapArt, StoryArt } from '../art/sectionArt'
 import Reveal from './Reveal'
 
-const STORY_PHOTO = '/img/story-photo.webp'
+const STORY_PHOTO = asset('img/story-photo.webp')
 
 /** A mini phone mock-up used inside the creative-intelligence story card. */
 function MiniPhone({ label, greenLine }) {
